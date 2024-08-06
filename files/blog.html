@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   
+    
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+   
+    <nav class="bg-white py-4 px-6 shadow-md">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <!-- <a href="#" class="text-2xl font-bold text-black">UOMO</a> -->
+                 <img src="/image/logo.png" alt="" >
+                 <div class="hidden md:flex   space-x-6">
+                    <a href="http://127.0.0.1:5500/files/assign.html" class="  text-black hover:text-red-600 ml-6">Home</a>
+                    
+                    <a href="http://127.0.0.1:5500/files/shop.html" class="text-black hover:text-red-600">Shop</a>
+                    <a href="http://127.0.0.1:5500/files/blog.html" class="text-black hover:text-red-600">Blog</a>
+                    <a href="http://127.0.0.1:5500/files/page.html" class="text-black hover:text-red-600">Pages</a>
+                    <a href="http://127.0.0.1:5500/files/about.html" class="text-black hover:text-red-600">About</a>
+                    <a href="http://127.0.0.1:5500/files/contact.html" class="text-black hover:text-red-600">Contact</a>
+                </div>
+            </div>
+
+            <!-- Icons in the navbar -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hidden md:block text-black hover:text-gray-700 hover:text-red-600">
+                    <ion-icon name="search-outline" class="w-6 h-6"></ion-icon>
+                </a>
+                <a href="#" class="hidden md:block text-black hover:text-gray-700 hover:text-red-600">
+                    <ion-icon name="person-outline" class="w-6 h-6"></ion-icon>
+                </a>
+                <a href="#" class="hidden md:block text-black hover:text-gray-700 hover:text-red-600">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </a>
+                <a href="#" class="hidden md:block text-black hover:text-gray-700 hover:text-red-600">
+                    <ion-icon name="bag-outline" class="w-6 h-6"></ion-icon>
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-black focus:outline-none hover:text-red-600">
+                    <ion-icon name="menu-outline" class="w-6 h-6"></ion-icon>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu section -->
+        <div id="menu" class="hidden md:hidden flex flex-col space-y-4 mt-4 px-6">
+            <a href="#" class="text-black hover:text-red-600">Home</a>
+            <a href="#" class="text-black hover:text-red-600">Shop</a>
+            <a href="#" class="text-black hover:text-red-600">Blog</a>
+            <a href="#" class="text-black hover:text-red-600">Pages</a>
+            <a href="#" class="text-black hover:text-red-600">About</a>
+            <a href="#" class="text-black hover:text-red-600">Contact</a>
+        </div>
+    </nav>
+
+        <!-- header section  -->
+        <div class="container mx-auto py-8">
+
+            <div class="bg-white shadow w-full h-80" style="background-image: url('/shoptheme/shop_banner_character1.png'); background-size: cover; background-position: center;">
+                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">JACKETS & COATS</h1>
+                    <nav class="mt-4 text-center">
+                        <ul class="flex flex-wrap justify-left space-x-4">
+                            <li><a href="#" class="text-sm sm:text-base md:text-lg text-gray-700 hover:text-gray-900">ALL</a></li>
+                            <li><a href="#" class="text-sm sm:text-base md:text-lg text-gray-700 hover:text-gray-900">STAYHOME</a></li>
+                            <li><a href="#" class="text-sm sm:text-base md:text-lg text-gray-700 hover:text-gray-900">JACKETS</a></li>
+                            <li><a href="#" class="text-sm sm:text-base md:text-lg text-gray-700 hover:text-gray-900">HOODIES</a></li>
+                            <li><a href="#" class="text-sm sm:text-base md:text-lg text-gray-700 hover:text-gray-900">MEN</a></li>
+                            <li><a href="#" class="text-sm sm:text-base md:text-lg text-gray-700 hover:text-gray-900">WOMEN</a></li>
+                            <li><a href="#" class="text-sm sm:text-base md:text-lg text-gray-700 hover:text-gray-900">ACCESSORIES</a></li>
+                            <li><a href="#" class="text-sm sm:text-base md:text-lg text-gray-700 hover:text-gray-900">SHOES</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        
+
+
+        <!-- card section  -->
+        
+           
+        <div class="flex mt-8 flex-col md:flex-row space-x-4">
+            <div class="bg-white shadow-md rounded-lg overflow-hidden w-full md:w-1/2">
+              <img src="/blogimg/blog-1.jpg" alt="Fashion Store" class="w-full h-30 object-cover" />
+              <div class="p-4">
+                <span class="text-zinc-500 text-sm">BY BY ADMIN</span>
+                <span class="text-zinc-500 text-sm pl-6">APRIL 05, 2023</span>
+                <h2 class="text-xl font-semibold mt-2">Woman with good shoes is never be ugly place</h2>
+                <p class="text-zinc-700 mt-2">Midst one brought greater also morning green saying had good. Open stars day let over gathered, grass face one every light of under.</p>
+                <a href="#" class="inline-block mt-4 bg-primary text-primary-foreground hover:bg-primary/80 px-4 py-2 rounded">CONTINUE READING</a>
+              </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden w-full md:w-1/2">
+              <img src="/blogimg/blog-2.jpg" alt="Online Sales Tips" class="w-full h-30 object-cover" />
+              <div class="p-4">
+                <span class="text-zinc-500 text-sm">BY BY ADMIN </span>
+                <span class="text-zinc-500 text-sm pl-6">APRIL 05, 2023</span>
+                <h2 class="text-xl font-semibold mt-2">5 Tips to Increase Your Online Sales</h2>
+                <p class="text-zinc-700 mt-2">Midst one brought greater also morning green saying had good. Open stars day let over gathered, grass face one every light of under.</p>
+                <a href="#" class="inline-block mt-4 bg-primary text-primary-foreground hover:bg-primary/80 px-4 py-2 rounded">CONTINUE READING</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex mt-8 mb-8 flex-col md:flex-row space-x-4">
+            <div class="bg-white shadow-md rounded-lg overflow-hidden w-full md:w-1/2">
+              <img src="/blogimg/blog-3.jpg" alt="Fashion Store" class="w-full h-30 object-cover" />
+              <div class="p-4">
+                <span class="text-zinc-500 text-sm">BY BY ADMIN</span>
+                <span class="text-zinc-500 text-sm pl-6">APRIL 05, 2023</span>
+                <h2 class="text-xl font-semibold mt-2">Woman with good shoes is never be ugly place</h2>
+                <p class="text-zinc-700 mt-2">Midst one brought greater also morning green saying had good. Open stars day let over gathered, grass face one every light of under.</p>
+                <a href="#" class="inline-block mt-4 bg-primary text-primary-foreground hover:bg-primary/80 px-4 py-2 rounded">CONTINUE READING</a>
+              </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden w-full md:w-1/2">
+              <img src="/blogimg/blog-4.jpg" alt="Online Sales Tips" class="w-full h-30 object-cover" />
+              <div class="p-4">
+                <span class="text-zinc-500 text-sm">BY BY ADMIN</span>
+                <span class="text-zinc-500 text-sm pl-6">APRIL 05, 2023</span>
+                <h2 class="text-xl font-semibold mt-2">5 Tips to Increase Your Online Sales</h2>
+                <p class="text-zinc-700 mt-2">Midst one brought greater also morning green saying had good. Open stars day let over gathered, grass face one every light of under.</p>
+                <a href="#" class="inline-block mt-4 bg-primary text-primary-foreground hover:bg-primary/80 px-4 py-2 rounded">CONTINUE READING</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+            
+                <!-- footer          -->
+
+                <section class="bg-gray-100">
+                    <footer class="bg-gray-200 py-12">
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <div class="flex flex-col md:flex-row justify-center">
+                                <div class="mb-6 md:mb-0 md:w-1/4">
+                                    <img src="/image/logo.png" alt="Logo" class="h-8 mb-4 mx-auto">
+                                    <address class="not-italic  mt-8 text-xs text-center">
+                                        1418 River Drive, Suite 35 Cottonhall, CA 96222<br>
+                                        United States
+                                    </address>
+                                    <a href="tel:+12463450695" class="block mt-4 mb-6 text-xs text-center">+1 246-345-0695</a>
+                                    <div class="flex justify-center space-x-4">
+                                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                                        <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                                        <a href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:w-3/4  text-center md:text-left">
+                                    <div>
+                                        <h5 class=" text-sm font-semibold mb-4">COMPANY</h5>
+                                        <ul>
+                                            <li class="mb-2 text-xs"><a href="#">About Us</a></li>
+                                            <li class="mb-2 text-xs"><a href="#">Careers</a></li>
+                                            <li class="mb-2 text-xs"><a href="#">Affiliates</a></li>
+                                            <li class="mb-2 text-xs"><a href="#">Blog</a></li>
+                                            <li class="mb-2 text-xs"><a href="#">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-sm font-semibold mb-4">SHOP</h5>
+                                        <ul>
+                                            <li class="mb-2 text-xs"><a href="#">New Arrivals</a></li>
+                                            <li class="mb-2 text-xs"><a href="#">Accessories</a></li>
+                                            <li class="mb-2 text-xs"><a href="#">Men</a></li>
+                                            <li class="mb-2 text-xs"><a href="#">Women</a></li>
+                                            <li class="mb-2 text-xs"><a href="#">Shop All</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-sm font-semibold mb-4">HELP</h5>
+                                        <ul>
+                                            <li class="mb-2 text-xs"><a href="#">Customer Service</a></li>
+                                            <li class="mb-2 text-xs"><a href="#">My Account</a></li>
+                                            <li class="mb-2 text-xs"><a href="#">Find a Store</a></li>
+                                            <li class="mb-2 text-xs"><a href="#">Legal & Privacy</a></li>
+                                            <li class="mb-2 text-xs"><a href="#">Contact</a></li>
+                                            <li class="mb-2 text-xs"><a href="#">Gift Card</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+            
+
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
